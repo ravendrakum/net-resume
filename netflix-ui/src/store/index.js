@@ -81,7 +81,7 @@ import {
     async (email) => {
       const {
         data: { movies },
-      } = await axios.get(`${window.location.origin}/api/user/liked/${email}`);
+      } = await axios.get(`https://net-resume-1.onrender.com/api/user/liked/${email}`);
       return movies;
     }
   );
@@ -91,7 +91,7 @@ import {
     async ({ movieId, email }) => {
       const {
         data: { movies },
-      } = await axios.put(`${window.location.origin}/api/user/remove`, {
+      } = await axios.put(`https://net-resume-1.onrender.com/api/user/remove`, {
         email,
         movieId,
       });
