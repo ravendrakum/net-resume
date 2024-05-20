@@ -50,7 +50,7 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
   //add todo
   const addToList = async () => {
     try {
-      await axios.post(`https://net-resume-1.onrender.com/api/user/add`, {
+      await axios.post(`https://net-resume-3.onrender.com/api/user/add`, {
         email,
         data: movieData,
       });
